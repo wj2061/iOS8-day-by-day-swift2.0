@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ShareAlike" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="highland" translatesAutoresizingMaskIntoConstraints="NO" id="hmv-Qu-dWY">
+                                <rect key="frame" x="50" y="323" width="500" height="277"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Share" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tod-Vn-uDS">
+                                <rect key="frame" x="191" y="239" width="110" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="aRt-hn-VLZ"/>
+                                    <constraint firstAttribute="width" constant="110" id="fEI-Oj-1J9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="47"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alike" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FD9-vQ-Qhd">
+                                <rect key="frame" x="301" y="239" width="84" height="38"/>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-MediumItalic" family="Avenir Next Condensed" pointSize="47"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D60-yI-cGm">
+                                <rect key="frame" x="253" y="285" width="95" height="30"/>
+                                <state key="normal" title="Share Sample"/>
+                                <connections>
+                                    <action selector="handleShareSampleTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="Unu-8G-fFE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hmv-Qu-dWY" firstAttribute="top" secondItem="D60-yI-cGm" secondAttribute="bottom" constant="8" symbolic="YES" id="5ig-kg-8uA"/>
+                            <constraint firstItem="D60-yI-cGm" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Eha-Fp-XLs"/>
+                            <constraint firstItem="Tod-Vn-uDS" firstAttribute="baseline" secondItem="FD9-vQ-Qhd" secondAttribute="baseline" id="F63-ik-gg0"/>
+                            <constraint firstItem="hmv-Qu-dWY" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="FZN-nZ-4xN"/>
+                            <constraint firstItem="hmv-Qu-dWY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="GpD-P6-wrb"/>
+                            <constraint firstItem="FD9-vQ-Qhd" firstAttribute="leading" secondItem="Tod-Vn-uDS" secondAttribute="trailing" id="Mxg-xS-SCk"/>
+                            <constraint firstItem="D60-yI-cGm" firstAttribute="top" secondItem="Tod-Vn-uDS" secondAttribute="bottom" constant="8" symbolic="YES" id="N8e-Lg-SQe"/>
+                            <constraint firstItem="hmv-Qu-dWY" firstAttribute="centerX" secondItem="D60-yI-cGm" secondAttribute="centerX" id="b7z-cw-g51"/>
+                            <constraint firstItem="Tod-Vn-uDS" firstAttribute="firstBaseline" secondItem="FD9-vQ-Qhd" secondAttribute="firstBaseline" id="btS-Yt-ABz"/>
+                            <constraint firstItem="D60-yI-cGm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ikw-h9-W9O"/>
+                            <constraint firstItem="D60-yI-cGm" firstAttribute="centerX" secondItem="Tod-Vn-uDS" secondAttribute="trailing" id="zWk-nu-yRm"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="GpD-P6-wrb"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="sharingContentImageView" destination="hmv-Qu-dWY" id="u9v-1R-JvW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="340" y="389"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="highland" width="500" height="500"/>
+    </resources>
+</document>
