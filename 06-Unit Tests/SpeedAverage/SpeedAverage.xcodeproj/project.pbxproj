@@ -1,0 +1,419 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0486B3AD1BDF51BF002D9E28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0486B3AC1BDF51BF002D9E28 /* AppDelegate.swift */; };
+		0486B3AF1BDF51BF002D9E28 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0486B3AE1BDF51BF002D9E28 /* ViewController.swift */; };
+		0486B3B21BDF51BF002D9E28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0486B3B01BDF51BF002D9E28 /* Main.storyboard */; };
+		0486B3B41BDF51BF002D9E28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0486B3B31BDF51BF002D9E28 /* Assets.xcassets */; };
+		0486B3B71BDF51BF002D9E28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0486B3B51BDF51BF002D9E28 /* LaunchScreen.storyboard */; };
+		0486B3CF1BDF52DD002D9E28 /* SpeedAverageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0486B3C11BDF51BF002D9E28 /* SpeedAverageTests.swift */; };
+		0486B3D01BDF52E4002D9E28 /* MovingAverageCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0486B3CC1BDF52D1002D9E28 /* MovingAverageCalculator.swift */; };
+		0486B3D21BDF53EC002D9E28 /* NaiveMovingAverageCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0486B3D11BDF53EC002D9E28 /* NaiveMovingAverageCalculator.swift */; };
+		0486B3D41BDF64DC002D9E28 /* BetterMovingAverageCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0486B3D31BDF64DC002D9E28 /* BetterMovingAverageCalculator.swift */; };
+		0486B3D51BDF64DC002D9E28 /* BetterMovingAverageCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0486B3D31BDF64DC002D9E28 /* BetterMovingAverageCalculator.swift */; };
+		0486B3D61BDF6501002D9E28 /* MovingAverageCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0486B3CC1BDF52D1002D9E28 /* MovingAverageCalculator.swift */; };
+		0486B3D71BDF651A002D9E28 /* NaiveMovingAverageCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0486B3D11BDF53EC002D9E28 /* NaiveMovingAverageCalculator.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0486B3BE1BDF51BF002D9E28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0486B3A11BDF51BF002D9E28 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0486B3A81BDF51BF002D9E28;
+			remoteInfo = SpeedAverage;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0486B3A91BDF51BF002D9E28 /* SpeedAverage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeedAverage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0486B3AC1BDF51BF002D9E28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0486B3AE1BDF51BF002D9E28 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0486B3B11BDF51BF002D9E28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0486B3B31BDF51BF002D9E28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0486B3B61BDF51BF002D9E28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0486B3B81BDF51BF002D9E28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0486B3BD1BDF51BF002D9E28 /* SpeedAverageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpeedAverageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0486B3C11BDF51BF002D9E28 /* SpeedAverageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedAverageTests.swift; sourceTree = "<group>"; };
+		0486B3C31BDF51BF002D9E28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0486B3CC1BDF52D1002D9E28 /* MovingAverageCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MovingAverageCalculator.swift; path = SpeedAverageTests/MovingAverageCalculator.swift; sourceTree = SOURCE_ROOT; };
+		0486B3D11BDF53EC002D9E28 /* NaiveMovingAverageCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NaiveMovingAverageCalculator.swift; sourceTree = "<group>"; };
+		0486B3D31BDF64DC002D9E28 /* BetterMovingAverageCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BetterMovingAverageCalculator.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0486B3A61BDF51BF002D9E28 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0486B3BA1BDF51BF002D9E28 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0486B3A01BDF51BF002D9E28 = {
+			isa = PBXGroup;
+			children = (
+				0486B3AB1BDF51BF002D9E28 /* SpeedAverage */,
+				0486B3C01BDF51BF002D9E28 /* SpeedAverageTests */,
+				0486B3AA1BDF51BF002D9E28 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0486B3AA1BDF51BF002D9E28 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0486B3A91BDF51BF002D9E28 /* SpeedAverage.app */,
+				0486B3BD1BDF51BF002D9E28 /* SpeedAverageTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0486B3AB1BDF51BF002D9E28 /* SpeedAverage */ = {
+			isa = PBXGroup;
+			children = (
+				0486B3AC1BDF51BF002D9E28 /* AppDelegate.swift */,
+				0486B3AE1BDF51BF002D9E28 /* ViewController.swift */,
+				0486B3CC1BDF52D1002D9E28 /* MovingAverageCalculator.swift */,
+				0486B3D11BDF53EC002D9E28 /* NaiveMovingAverageCalculator.swift */,
+				0486B3D31BDF64DC002D9E28 /* BetterMovingAverageCalculator.swift */,
+				0486B3B01BDF51BF002D9E28 /* Main.storyboard */,
+				0486B3B31BDF51BF002D9E28 /* Assets.xcassets */,
+				0486B3B51BDF51BF002D9E28 /* LaunchScreen.storyboard */,
+				0486B3B81BDF51BF002D9E28 /* Info.plist */,
+			);
+			path = SpeedAverage;
+			sourceTree = "<group>";
+		};
+		0486B3C01BDF51BF002D9E28 /* SpeedAverageTests */ = {
+			isa = PBXGroup;
+			children = (
+				0486B3C11BDF51BF002D9E28 /* SpeedAverageTests.swift */,
+				0486B3C31BDF51BF002D9E28 /* Info.plist */,
+			);
+			path = SpeedAverageTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0486B3A81BDF51BF002D9E28 /* SpeedAverage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0486B3C61BDF51BF002D9E28 /* Build configuration list for PBXNativeTarget "SpeedAverage" */;
+			buildPhases = (
+				0486B3A51BDF51BF002D9E28 /* Sources */,
+				0486B3A61BDF51BF002D9E28 /* Frameworks */,
+				0486B3A71BDF51BF002D9E28 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpeedAverage;
+			productName = SpeedAverage;
+			productReference = 0486B3A91BDF51BF002D9E28 /* SpeedAverage.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0486B3BC1BDF51BF002D9E28 /* SpeedAverageTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0486B3C91BDF51BF002D9E28 /* Build configuration list for PBXNativeTarget "SpeedAverageTests" */;
+			buildPhases = (
+				0486B3B91BDF51BF002D9E28 /* Sources */,
+				0486B3BA1BDF51BF002D9E28 /* Frameworks */,
+				0486B3BB1BDF51BF002D9E28 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0486B3BF1BDF51BF002D9E28 /* PBXTargetDependency */,
+			);
+			name = SpeedAverageTests;
+			productName = SpeedAverageTests;
+			productReference = 0486B3BD1BDF51BF002D9E28 /* SpeedAverageTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0486B3A11BDF51BF002D9E28 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = wj;
+				TargetAttributes = {
+					0486B3A81BDF51BF002D9E28 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					0486B3BC1BDF51BF002D9E28 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 0486B3A81BDF51BF002D9E28;
+					};
+				};
+			};
+			buildConfigurationList = 0486B3A41BDF51BF002D9E28 /* Build configuration list for PBXProject "SpeedAverage" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0486B3A01BDF51BF002D9E28;
+			productRefGroup = 0486B3AA1BDF51BF002D9E28 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0486B3A81BDF51BF002D9E28 /* SpeedAverage */,
+				0486B3BC1BDF51BF002D9E28 /* SpeedAverageTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0486B3A71BDF51BF002D9E28 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0486B3B71BDF51BF002D9E28 /* LaunchScreen.storyboard in Resources */,
+				0486B3B41BDF51BF002D9E28 /* Assets.xcassets in Resources */,
+				0486B3B21BDF51BF002D9E28 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0486B3BB1BDF51BF002D9E28 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0486B3A51BDF51BF002D9E28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0486B3AF1BDF51BF002D9E28 /* ViewController.swift in Sources */,
+				0486B3D41BDF64DC002D9E28 /* BetterMovingAverageCalculator.swift in Sources */,
+				0486B3D21BDF53EC002D9E28 /* NaiveMovingAverageCalculator.swift in Sources */,
+				0486B3D01BDF52E4002D9E28 /* MovingAverageCalculator.swift in Sources */,
+				0486B3AD1BDF51BF002D9E28 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0486B3B91BDF51BF002D9E28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0486B3CF1BDF52DD002D9E28 /* SpeedAverageTests.swift in Sources */,
+				0486B3D71BDF651A002D9E28 /* NaiveMovingAverageCalculator.swift in Sources */,
+				0486B3D61BDF6501002D9E28 /* MovingAverageCalculator.swift in Sources */,
+				0486B3D51BDF64DC002D9E28 /* BetterMovingAverageCalculator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0486B3BF1BDF51BF002D9E28 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0486B3A81BDF51BF002D9E28 /* SpeedAverage */;
+			targetProxy = 0486B3BE1BDF51BF002D9E28 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0486B3B01BDF51BF002D9E28 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0486B3B11BDF51BF002D9E28 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0486B3B51BDF51BF002D9E28 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0486B3B61BDF51BF002D9E28 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0486B3C41BDF51BF002D9E28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0486B3C51BDF51BF002D9E28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0486B3C71BDF51BF002D9E28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SpeedAverage/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wj.SpeedAverage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0486B3C81BDF51BF002D9E28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SpeedAverage/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wj.SpeedAverage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		0486B3CA1BDF51BF002D9E28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SpeedAverageTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wj.SpeedAverageTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpeedAverage.app/SpeedAverage";
+			};
+			name = Debug;
+		};
+		0486B3CB1BDF51BF002D9E28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SpeedAverageTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wj.SpeedAverageTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpeedAverage.app/SpeedAverage";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0486B3A41BDF51BF002D9E28 /* Build configuration list for PBXProject "SpeedAverage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0486B3C41BDF51BF002D9E28 /* Debug */,
+				0486B3C51BDF51BF002D9E28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0486B3C61BDF51BF002D9E28 /* Build configuration list for PBXNativeTarget "SpeedAverage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0486B3C71BDF51BF002D9E28 /* Debug */,
+				0486B3C81BDF51BF002D9E28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0486B3C91BDF51BF002D9E28 /* Build configuration list for PBXNativeTarget "SpeedAverageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0486B3CA1BDF51BF002D9E28 /* Debug */,
+				0486B3CB1BDF51BF002D9E28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0486B3A11BDF51BF002D9E28 /* Project object */;
+}
