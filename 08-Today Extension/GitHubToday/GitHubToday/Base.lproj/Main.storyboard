@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="bfH-SA-r9n">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="octicons-local.ttf">
+            <string>github-octicons</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="EYZ-2L-XCB">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bfH-SA-r9n" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zcK-Xj-CmP">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="go9-ul-euf" kind="relationship" relationship="rootViewController" id="3Ue-OP-ee5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HeM-KO-ovK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="236" y="839"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="iFX-QU-XCd">
+            <objects>
+                <tableViewController id="go9-ul-euf" customClass="TableViewController" customModule="GitHubToday" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" sectionHeaderHeight="28" sectionFooterHeight="28" id="7ek-S0-Sfs">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="EventCell" rowHeight="70" id="6HF-9h-UQt" customClass="EventTableViewCell" customModule="GitHubToday" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="600" height="70"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6HF-9h-UQt" id="uMc-GF-jrl">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="69"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CgB-qc-uij">
+                                            <rect key="frame" x="20" y="5" width="45" height="59"/>
+                                            <fontDescription key="fontDescription" name="github-octicons" family="github-octicons" pointSize="45"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TwU-GN-Nes">
+                                            <rect key="frame" x="79" y="23" width="47" height="24"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a date and time" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OiR-me-UhL">
+                                            <rect key="frame" x="79" y="49" width="117" height="15"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
+                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="CgB-qc-uij" firstAttribute="centerY" secondItem="TwU-GN-Nes" secondAttribute="centerY" id="Svh-mp-bYj"/>
+                                        <constraint firstAttribute="bottom" secondItem="CgB-qc-uij" secondAttribute="bottom" constant="5" id="XFc-sY-peg"/>
+                                        <constraint firstItem="OiR-me-UhL" firstAttribute="top" secondItem="TwU-GN-Nes" secondAttribute="bottom" constant="2" id="XxI-ml-Nze"/>
+                                        <constraint firstItem="TwU-GN-Nes" firstAttribute="leading" secondItem="CgB-qc-uij" secondAttribute="trailing" constant="14" id="bQj-Ai-iDM"/>
+                                        <constraint firstItem="TwU-GN-Nes" firstAttribute="leading" secondItem="OiR-me-UhL" secondAttribute="leading" id="geJ-pZ-wuD"/>
+                                        <constraint firstItem="CgB-qc-uij" firstAttribute="leading" secondItem="uMc-GF-jrl" secondAttribute="leading" constant="20" id="mh5-EH-Xzj"/>
+                                        <constraint firstItem="CgB-qc-uij" firstAttribute="top" secondItem="uMc-GF-jrl" secondAttribute="top" constant="5" id="rBG-xX-WY3"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="dateLabel" destination="OiR-me-UhL" id="vQ5-B9-ZtE"/>
+                                    <outlet property="iconLabel" destination="CgB-qc-uij" id="kH4-aS-gAW"/>
+                                    <outlet property="repoLabel" destination="TwU-GN-Nes" id="san-Bw-rKf"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="go9-ul-euf" id="wbm-vI-16g"/>
+                            <outlet property="delegate" destination="go9-ul-euf" id="8GQ-lx-Vc9"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="8WG-Lt-vff"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rRM-Ua-e9v" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="915" y="839"/>
+        </scene>
+    </scenes>
+</document>

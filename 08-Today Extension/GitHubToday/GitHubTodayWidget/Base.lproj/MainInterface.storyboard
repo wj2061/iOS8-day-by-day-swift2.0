@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="gck-44-BFw">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="octicons-local.ttf">
+            <string>github-octicons</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--Today View Controller-->
+        <scene sceneID="Grh-Io-4n3">
+            <objects>
+                <viewController id="gck-44-BFw" customClass="TodayViewController" customModule="GitHubTodayWidget" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wdE-y1-Wfe"/>
+                        <viewControllerLayoutGuide type="bottom" id="WaN-dD-oQK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="1p1-FS-idW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="37"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="loading..." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="238" translatesAutoresizingMaskIntoConstraints="NO" id="MQ8-Pa-dPw">
+                                <rect key="frame" x="34" y="8" width="238" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="c" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4VH-no-QLq">
+                                <rect key="frame" x="0.0" y="6" width="25" height="25"/>
+                                <fontDescription key="fontDescription" name="github-octicons" family="github-octicons" pointSize="25"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ydN-kp-qkp">
+                                <rect key="frame" x="276" y="3" width="36" height="31"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                                <state key="normal" title="more">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="handlemoreButtonPressed:" destination="gck-44-BFw" eventType="touchUpInside" id="6zT-2J-RC0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ydN-kp-qkp" secondAttribute="trailing" constant="8" id="4kp-OH-qae"/>
+                            <constraint firstItem="WaN-dD-oQK" firstAttribute="top" secondItem="MQ8-Pa-dPw" secondAttribute="bottom" constant="8" symbolic="YES" id="Fb2-aY-TFi"/>
+                            <constraint firstItem="4VH-no-QLq" firstAttribute="leading" secondItem="1p1-FS-idW" secondAttribute="leading" id="RVN-K9-Dnt"/>
+                            <constraint firstItem="MQ8-Pa-dPw" firstAttribute="leading" secondItem="1p1-FS-idW" secondAttribute="leading" constant="34" id="Rma-BZ-vMV"/>
+                            <constraint firstAttribute="centerY" secondItem="MQ8-Pa-dPw" secondAttribute="centerY" id="Tx6-T9-OJQ"/>
+                            <constraint firstItem="MQ8-Pa-dPw" firstAttribute="top" secondItem="wdE-y1-Wfe" secondAttribute="bottom" constant="8" symbolic="YES" id="XTn-OO-0ad"/>
+                            <constraint firstAttribute="centerY" secondItem="4VH-no-QLq" secondAttribute="centerY" id="g73-wa-IwX"/>
+                            <constraint firstItem="ydN-kp-qkp" firstAttribute="leading" secondItem="MQ8-Pa-dPw" secondAttribute="trailing" constant="4" id="hmv-qF-AlW"/>
+                            <constraint firstAttribute="centerY" secondItem="ydN-kp-qkp" secondAttribute="centerY" id="xWD-K8-LYl"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="37"/>
+                    <connections>
+                        <outlet property="RepoNameLabel" destination="MQ8-Pa-dPw" id="JNV-Yw-M6b"/>
+                        <outlet property="typeLabel" destination="4VH-no-QLq" id="jkU-2I-oXP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q9G-yL-xlK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="385" y="167.5"/>
+        </scene>
+    </scenes>
+</document>
