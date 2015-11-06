@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LiveKnobControl" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cbn-KM-0xY" customClass="KnobControl" customModule="LiveKnobControl" customModuleProvider="target">
+                                <rect key="frame" x="100" y="150" width="400" height="400"/>
+                                <color key="backgroundColor" red="0.90196084980000002" green="0.95294123890000004" blue="0.97254908080000002" alpha="1" colorSpace="deviceRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="value">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="startAngle">
+                                        <real key="value" value="-2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="endAngle">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
+                                        <real key="value" value="18"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="pointerLength">
+                                        <real key="value" value="27"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RWKnobControl" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="35" translatesAutoresizingMaskIntoConstraints="NO" id="fzF-qb-kf5">
+                                <rect key="frame" x="0.0" y="28" width="600" height="83"/>
+                                <color key="backgroundColor" red="0.90196084980000002" green="0.95294123890000004" blue="0.97254908080000002" alpha="1" colorSpace="deviceRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="70"/>
+                                <color key="textColor" red="1" green="0.58664772730000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Cbn-KM-0xY" secondAttribute="width" multiplier="1.5" id="4j4-KP-1uF"/>
+                            <constraint firstAttribute="height" secondItem="Cbn-KM-0xY" secondAttribute="height" multiplier="1.5" id="9RW-GD-SaH"/>
+                            <constraint firstItem="Cbn-KM-0xY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="50" id="SfL-xZ-xP2"/>
+                            <constraint firstItem="Cbn-KM-0xY" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="216" id="bh6-3n-O7A"/>
+                            <constraint firstItem="fzF-qb-kf5" firstAttribute="centerX" secondItem="Cbn-KM-0xY" secondAttribute="centerX" id="cdK-NX-s89"/>
+                            <constraint firstItem="fzF-qb-kf5" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="eWB-Kp-eaq"/>
+                            <constraint firstItem="Cbn-KM-0xY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="180" id="oRn-oX-mJD"/>
+                            <constraint firstItem="fzF-qb-kf5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ucr-4r-vID"/>
+                            <constraint firstItem="Cbn-KM-0xY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wKy-ag-h5m"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="bh6-3n-O7A"/>
+                                <exclude reference="oRn-oX-mJD"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="340" y="389"/>
+        </scene>
+    </scenes>
+</document>
