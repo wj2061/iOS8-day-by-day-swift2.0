@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="lOC-By-i2m">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--Master-->
+        <scene sceneID="pY4-Hu-kfo">
+            <objects>
+                <navigationController title="Master" id="RMx-3f-FxP" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Pmd-2v-anx">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="7bK-jq-Zjz" kind="relationship" relationship="rootViewController" id="tsl-Nk-0bq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8fS-aE-onr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-38" y="-630"/>
+        </scene>
+        <!--Trait Override View Controller-->
+        <scene sceneID="Jxx-hN-X9s">
+            <objects>
+                <viewController id="lOC-By-i2m" customClass="TraitOverrideViewController" customModule="NinjaWeapons" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ol6-1C-Vct"/>
+                        <viewControllerLayoutGuide type="bottom" id="c0C-b1-SMj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NaE-z7-jEK">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7hG-Fe-ft0">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <animations/>
+                                <connections>
+                                    <segue destination="H1p-Uh-vWS" kind="embed" id="ObI-vO-WIP"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7hG-Fe-ft0" firstAttribute="leading" secondItem="NaE-z7-jEK" secondAttribute="leading" id="5VM-kR-teb"/>
+                            <constraint firstItem="7hG-Fe-ft0" firstAttribute="bottom" secondItem="c0C-b1-SMj" secondAttribute="top" id="Ft9-7h-fv0"/>
+                            <constraint firstItem="7hG-Fe-ft0" firstAttribute="top" secondItem="NaE-z7-jEK" secondAttribute="top" id="QOS-Qj-UFP"/>
+                            <constraint firstAttribute="trailing" secondItem="7hG-Fe-ft0" secondAttribute="trailing" id="ZY3-8H-zXG"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1v6-TO-AjT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1722" y="-279"/>
+        </scene>
+        <!--Split View Controller-->
+        <scene sceneID="Nki-YV-4Qg">
+            <objects>
+                <splitViewController id="H1p-Uh-vWS" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <connections>
+                        <segue destination="RMx-3f-FxP" kind="relationship" relationship="masterViewController" id="BlO-5A-QYV"/>
+                        <segue destination="vC3-pB-5Vb" kind="relationship" relationship="detailViewController" id="Tll-UG-LXB"/>
+                    </connections>
+                </splitViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cZU-Oi-B1e" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-856" y="-330"/>
+        </scene>
+        <!--Master-->
+        <scene sceneID="smW-Zh-WAh">
+            <objects>
+                <tableViewController title="Master" clearsSelectionOnViewWillAppear="NO" id="7bK-jq-Zjz" customClass="MasterViewController" customModule="NinjaWeapons" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="r7i-6Z-zg0">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="Arm-wq-HPj" style="IBUITableViewCellStyleDefault" id="WCw-Qf-5nD">
+                                <rect key="frame" x="0.0" y="66" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WCw-Qf-5nD" id="37f-cq-3Eg">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Arm-wq-HPj">
+                                            <rect key="frame" x="15" y="0.0" width="570" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                    </subviews>
+                                    <animations/>
+                                </tableViewCellContentView>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <segue destination="vC3-pB-5Vb" kind="showDetail" identifier="showDetail" id="6S0-TO-JiA"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="7bK-jq-Zjz" id="Gho-Na-rnu"/>
+                            <outlet property="delegate" destination="7bK-jq-Zjz" id="RA6-mI-bju"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Master" id="Zdf-7t-Un8"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rux-fX-hf1" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="709" y="-630"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="r7l-gg-dq7">
+            <objects>
+                <navigationController id="vC3-pB-5Vb" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="DjV-YW-jjY">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="RXD-jM-1Ks" kind="relationship" relationship="rootViewController" id="Haz-yF-uhr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SLD-UC-DBI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-45" y="129"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="9y5-Jh-xag">
+            <objects>
+                <viewController id="RXD-jM-1Ks" customClass="DetailViewController" customModule="NinjaWeapons" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HuF-5w-wqi"/>
+                        <viewControllerLayoutGuide type="bottom" id="hfj-WN-d2m"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="x9m-L8-Wam">
+                        <rect key="frame" x="0.0" y="44" width="600" height="556"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="748" verticalCompressionResistancePriority="747" image="katana" translatesAutoresizingMaskIntoConstraints="NO" id="5UE-HW-A0i">
+                                <rect key="frame" x="0.0" y="217" width="600" height="339"/>
+                                <animations/>
+                            </imageView>
+                            <view contentMode="scaleToFill" verticalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="lOy-mj-Bs5">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="217"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="katana (刀)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999998807907104" translatesAutoresizingMaskIntoConstraints="NO" id="P66-DV-YLb">
+                                        <rect key="frame" x="20" y="10" width="226" height="59"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="50"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NOUN" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999998807907104" translatesAutoresizingMaskIntoConstraints="NO" id="Nfv-Zt-TWt">
+                                        <rect key="frame" x="20" y="77" width="65" height="26"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="22"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="katana (plural katana or katanas)" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999998807907104" preferredMaxLayoutWidth="293" translatesAutoresizingMaskIntoConstraints="NO" id="PVi-0E-Mj5">
+                                        <rect key="frame" x="20" y="111" width="293" height="26"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="22"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="748" text="1. A type of Japanese longsword, 日本刀 (にほんとう, nihontō) having a single edge and slight curvature." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999998807907104" preferredMaxLayoutWidth="560" translatesAutoresizingMaskIntoConstraints="NO" id="Dfa-so-Amf">
+                                        <rect key="frame" x="20" y="145" width="560" height="52"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="22"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Dfa-so-Amf" secondAttribute="bottom" constant="20" id="5gA-ew-OSF"/>
+                                    <constraint firstItem="Nfv-Zt-TWt" firstAttribute="leading" secondItem="PVi-0E-Mj5" secondAttribute="leading" id="Atm-Q6-AgO"/>
+                                    <constraint firstAttribute="trailing" secondItem="Dfa-so-Amf" secondAttribute="trailing" constant="20" id="I6Q-Ar-zbG"/>
+                                    <constraint firstItem="P66-DV-YLb" firstAttribute="top" secondItem="lOy-mj-Bs5" secondAttribute="top" constant="10" id="JSO-Uw-FWZ"/>
+                                    <constraint firstItem="PVi-0E-Mj5" firstAttribute="top" secondItem="Nfv-Zt-TWt" secondAttribute="bottom" constant="8" id="NdE-r1-rwa"/>
+                                    <constraint firstAttribute="trailing" secondItem="P66-DV-YLb" secondAttribute="trailing" constant="20" id="Wua-Ky-6gt"/>
+                                    <constraint firstItem="Nfv-Zt-TWt" firstAttribute="leading" secondItem="P66-DV-YLb" secondAttribute="leading" id="XOj-LP-TFf"/>
+                                    <constraint firstItem="P66-DV-YLb" firstAttribute="leading" secondItem="lOy-mj-Bs5" secondAttribute="leading" constant="20" id="eS3-Cl-kez"/>
+                                    <constraint firstItem="Dfa-so-Amf" firstAttribute="leading" secondItem="PVi-0E-Mj5" secondAttribute="leading" id="eqq-wO-kL4"/>
+                                    <constraint firstItem="Nfv-Zt-TWt" firstAttribute="top" secondItem="P66-DV-YLb" secondAttribute="bottom" constant="8" id="gtp-jW-wbm"/>
+                                    <constraint firstItem="Dfa-so-Amf" firstAttribute="top" secondItem="PVi-0E-Mj5" secondAttribute="bottom" constant="8" id="l2F-c3-QrD"/>
+                                    <constraint firstAttribute="trailing" secondItem="PVi-0E-Mj5" secondAttribute="trailing" constant="20" id="ls4-Mc-BVz"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Wua-Ky-6gt"/>
+                                        <exclude reference="ls4-Mc-BVz"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="Wua-Ky-6gt"/>
+                                        <include reference="ls4-Mc-BVz"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="lOy-mj-Bs5" secondAttribute="bottom" id="036-I9-OiJ"/>
+                            <constraint firstAttribute="trailing" secondItem="lOy-mj-Bs5" secondAttribute="trailing" id="3Gy-T1-IYe"/>
+                            <constraint firstItem="lOy-mj-Bs5" firstAttribute="leading" secondItem="5UE-HW-A0i" secondAttribute="trailing" id="A0F-G0-kjx"/>
+                            <constraint firstItem="5UE-HW-A0i" firstAttribute="top" secondItem="x9m-L8-Wam" secondAttribute="top" id="E1q-7V-Fxh"/>
+                            <constraint firstItem="lOy-mj-Bs5" firstAttribute="width" relation="lessThanOrEqual" secondItem="x9m-L8-Wam" secondAttribute="width" multiplier="0.5" id="HGU-Zd-qJV"/>
+                            <constraint firstItem="lOy-mj-Bs5" firstAttribute="top" secondItem="x9m-L8-Wam" secondAttribute="top" id="QLb-aS-GwL"/>
+                            <constraint firstItem="lOy-mj-Bs5" firstAttribute="height" relation="lessThanOrEqual" secondItem="x9m-L8-Wam" secondAttribute="height" multiplier="0.5" id="Sri-FT-PCs"/>
+                            <constraint firstItem="lOy-mj-Bs5" firstAttribute="leading" secondItem="x9m-L8-Wam" secondAttribute="leading" id="j3W-C7-HlA"/>
+                            <constraint firstAttribute="trailing" secondItem="5UE-HW-A0i" secondAttribute="trailing" id="jvh-Ib-jTb"/>
+                            <constraint firstAttribute="bottom" secondItem="5UE-HW-A0i" secondAttribute="bottom" id="kxv-Zl-yL8"/>
+                            <constraint firstItem="5UE-HW-A0i" firstAttribute="leading" secondItem="x9m-L8-Wam" secondAttribute="leading" id="leH-vA-319"/>
+                            <constraint firstItem="5UE-HW-A0i" firstAttribute="top" secondItem="lOy-mj-Bs5" secondAttribute="bottom" id="yVt-4o-GJ1"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="HGU-Zd-qJV"/>
+                                <exclude reference="036-I9-OiJ"/>
+                                <exclude reference="A0F-G0-kjx"/>
+                                <exclude reference="E1q-7V-Fxh"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="HGU-Zd-qJV"/>
+                                <include reference="036-I9-OiJ"/>
+                                <include reference="A0F-G0-kjx"/>
+                                <exclude reference="Sri-FT-PCs"/>
+                                <exclude reference="j3W-C7-HlA"/>
+                                <exclude reference="jvh-Ib-jTb"/>
+                                <include reference="E1q-7V-Fxh"/>
+                                <exclude reference="yVt-4o-GJ1"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <navigationItem key="navigationItem" id="5fF-2y-wZf"/>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="Dfa-so-Amf" id="GxT-wQ-lPe"/>
+                        <outlet property="furtherDetailLabel" destination="PVi-0E-Mj5" id="k0v-t7-F7n"/>
+                        <outlet property="nameLabel" destination="P66-DV-YLb" id="IOO-0V-Ag7"/>
+                        <outlet property="partOfSpeechLabel" destination="Nfv-Zt-TWt" id="oLr-gW-xSM"/>
+                        <outlet property="weaponImageView" destination="5UE-HW-A0i" id="MoT-dD-P8L"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ETg-sX-Jgg" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="662" y="129"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="katana" width="1024" height="619"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="6S0-TO-JiA"/>
+    </inferredMetricsTieBreakers>
+</document>
