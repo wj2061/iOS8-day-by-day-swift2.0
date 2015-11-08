@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--ChromaKey-->
+        <scene sceneID="hNz-n2-bh7">
+            <objects>
+                <viewController id="9pv-A4-QxB" customClass="ChromaKeyViewController" customModule="FilterBuilder" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
+                        <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kangaroos" translatesAutoresizingMaskIntoConstraints="NO" id="jn8-5E-BGW">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chroma_key" translatesAutoresizingMaskIntoConstraints="NO" id="9Ox-Hp-hvS">
+                                <rect key="frame" x="-150" y="0.0" width="900" height="600"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="9Ox-Hp-hvS" secondAttribute="height" multiplier="1.5:1" id="3vm-9e-ATV"/>
+                                </constraints>
+                            </imageView>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.69999999999999996" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="sk1-wa-Djq">
+                                <rect key="frame" x="18" y="513" width="564" height="31"/>
+                                <animations/>
+                                <connections>
+                                    <action selector="handleThresholdSliderChanged:" destination="9pv-A4-QxB" eventType="valueChanged" id="q6r-8K-GLu"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9Ox-Hp-hvS" firstAttribute="centerY" secondItem="tsR-hK-woN" secondAttribute="centerY" id="5q8-0k-rEw"/>
+                            <constraint firstItem="jn8-5E-BGW" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" id="GNj-7K-yzn"/>
+                            <constraint firstItem="sk1-wa-Djq" firstAttribute="centerX" secondItem="jn8-5E-BGW" secondAttribute="centerX" id="JLB-XL-Bkw"/>
+                            <constraint firstItem="sk1-wa-Djq" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="Rt9-lC-OQp"/>
+                            <constraint firstItem="jn8-5E-BGW" firstAttribute="bottom" secondItem="4ug-Mw-9AY" secondAttribute="top" id="Vg8-3c-qcZ"/>
+                            <constraint firstItem="9Ox-Hp-hvS" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="Zl9-IU-IMW"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="sk1-wa-Djq" secondAttribute="bottom" constant="8" symbolic="YES" id="egs-9g-mn6"/>
+                            <constraint firstAttribute="trailing" secondItem="jn8-5E-BGW" secondAttribute="trailing" id="rlO-l1-AK1"/>
+                            <constraint firstItem="jn8-5E-BGW" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="ruA-xZ-uae"/>
+                            <constraint firstItem="9Ox-Hp-hvS" firstAttribute="height" secondItem="tsR-hK-woN" secondAttribute="height" id="zcI-69-Jyg"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="ChromaKey" image="eraser" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="outputImageView" destination="9Ox-Hp-hvS" id="PlG-jX-62v"/>
+                        <outlet property="thresholdSlider" destination="sk1-wa-Djq" id="8wx-Fh-BPU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="750" y="-320"/>
+        </scene>
+        <!--Sobel-->
+        <scene sceneID="wg7-f3-ORb">
+            <objects>
+                <viewController id="8rJ-Kc-sve" customClass="SobelViewController" customModule="FilterBuilder" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
+                        <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rVD-bq-6oT">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                                <animations/>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rVD-bq-6oT" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="top" id="1vi-A6-qsI"/>
+                            <constraint firstItem="rVD-bq-6oT" firstAttribute="bottom" secondItem="Djb-ko-YwX" secondAttribute="top" id="Hfd-Ft-H0V"/>
+                            <constraint firstAttribute="trailing" secondItem="rVD-bq-6oT" secondAttribute="trailing" id="Onm-5l-HAj"/>
+                            <constraint firstItem="rVD-bq-6oT" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="nwM-HU-ZQQ"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Sobel" image="mathematical-instrument" id="cPa-gy-q4n"/>
+                    <connections>
+                        <outlet property="imageView" destination="rVD-bq-6oT" id="laZ-1c-MZp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="750" y="360"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chroma_key" width="320" height="214"/>
+        <image name="eraser" width="30" height="30"/>
+        <image name="kangaroos" width="512" height="339"/>
+        <image name="mathematical-instrument" width="30" height="30"/>
+    </resources>
+</document>
