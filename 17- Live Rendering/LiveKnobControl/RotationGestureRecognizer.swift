@@ -37,7 +37,7 @@ class RotationGestureRecognizer: UIPanGestureRecognizer {
     
     func calculateAngleToPoint(point:CGPoint)->CGFloat{
         let centerOffSet = CGPoint(x: point.x - CGRectGetMidX(view!.bounds), y: point.y - CGRectGetMidY(view!.bounds))
-        return atan2(centerOffSet.x, centerOffSet.y)
+        return atan2(centerOffSet.y, centerOffSet.x)
     }
     
     
