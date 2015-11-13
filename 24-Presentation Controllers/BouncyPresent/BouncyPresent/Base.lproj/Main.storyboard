@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BouncyPresent" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cpi-3K-l9K" customClass="PaddedButton" customModule="BouncyPresent" customModuleProvider="target">
+                                <rect key="frame" x="236" y="280" width="129" height="40"/>
+                                <color key="backgroundColor" red="1" green="0.97872049829999996" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="KSO-Q9-I0f"/>
+                                </constraints>
+                                <state key="normal" title="Bouncy Segue"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="KSO-Q9-I0f"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <segue destination="tbq-cJ-CYz" kind="presentation" identifier="bouncySegue" id="o1g-pF-JkH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cUt-lz-RDt" customClass="PaddedButton" customModule="BouncyPresent" customModuleProvider="target">
+                                <rect key="frame" x="231" y="363" width="138" height="40"/>
+                                <color key="backgroundColor" red="1" green="0.97872049829999996" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="rZU-J1-RdG"/>
+                                </constraints>
+                                <state key="normal" title="Bouncy Present"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="rZU-J1-RdG"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="handleBouncyPresentPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fk0-oC-6NS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.2470588235" green="0.87058823529999996" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="cUt-lz-RDt" firstAttribute="centerX" secondItem="Cpi-3K-l9K" secondAttribute="centerX" id="5ui-kT-zXT"/>
+                            <constraint firstItem="cUt-lz-RDt" firstAttribute="top" secondItem="Cpi-3K-l9K" secondAttribute="bottom" constant="43" id="AVY-IJ-88d"/>
+                            <constraint firstItem="Cpi-3K-l9K" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="M6S-kn-Ir8"/>
+                            <constraint firstItem="Cpi-3K-l9K" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MDm-Ll-nLe"/>
+                            <constraint firstItem="Cpi-3K-l9K" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="265" id="Mez-ce-bNI"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Mez-ce-bNI"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Overlay View Controller-->
+        <scene sceneID="6Wq-7A-ytT">
+            <objects>
+                <viewController storyboardIdentifier="overlayViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="tbq-cJ-CYz" customClass="OverlayViewController" customModule="BouncyPresent" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="v6d-uH-m8D"/>
+                        <viewControllerLayoutGuide type="bottom" id="6bF-da-asl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JUU-X0-fP3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s3W-8y-QO7" customClass="PaddedButton" customModule="BouncyPresent" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="494" width="600" height="60"/>
+                                <color key="backgroundColor" red="1" green="0.97872049829999996" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Dismiss"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="verticalPadding">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="handleDismissedPressed:" destination="tbq-cJ-CYz" eventType="touchUpInside" id="9pw-2q-HHh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90196084980000002" green="0.95294123890000004" blue="0.97254908080000002" alpha="1" colorSpace="deviceRGB"/>
+                        <constraints>
+                            <constraint firstItem="s3W-8y-QO7" firstAttribute="leading" secondItem="JUU-X0-fP3" secondAttribute="leading" id="2XR-Z4-ULH"/>
+                            <constraint firstItem="6bF-da-asl" firstAttribute="top" secondItem="s3W-8y-QO7" secondAttribute="bottom" constant="46" id="LFX-lU-oMR"/>
+                            <constraint firstAttribute="trailing" secondItem="s3W-8y-QO7" secondAttribute="trailing" id="VVv-QF-PVe"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S2w-yQ-aHK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1019" y="381"/>
+        </scene>
+    </scenes>
+</document>
