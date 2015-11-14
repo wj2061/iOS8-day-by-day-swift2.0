@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NotifyTimely" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NotifyTimely" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gKU-4G-CfI" customClass="PaddedLabel" customModule="NotifyTimely" customModuleProvider="target">
+                                <rect key="frame" x="20" y="239" width="560" height="61"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="verticalPadding">
+                                        <real key="value" value="40"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Timer Status" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nVs-5c-Lb7" customClass="PaddedLabel" customModule="NotifyTimely" customModuleProvider="target">
+                                <rect key="frame" x="20" y="300" width="560" height="61"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="verticalPadding">
+                                        <real key="value" value="40"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LIG-83-mTQ">
+                                <rect key="frame" x="20" y="431" width="140" height="70"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="6JV-vX-F3R"/>
+                                </constraints>
+                                <state key="normal" title="Restart"/>
+                                <connections>
+                                    <action selector="handleTimerButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fdN-bs-8hf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TKY-Dt-sQt">
+                                <rect key="frame" x="160" y="431" width="140" height="70"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="MpJ-uk-lKq"/>
+                                </constraints>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="handleTimerButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NR1-NL-mbV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wNd-Hu-Mgz">
+                                <rect key="frame" x="300" y="431" width="140" height="70"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="sRG-H6-n3V"/>
+                                </constraints>
+                                <state key="normal" title="Stop"/>
+                                <connections>
+                                    <action selector="handleTimerButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GAU-Mw-kGS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l6R-e1-C5F">
+                                <rect key="frame" x="440" y="431" width="140" height="70"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="aSl-IW-Pqa"/>
+                                </constraints>
+                                <state key="normal" title="Edit"/>
+                                <connections>
+                                    <action selector="handleTimerButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="irN-aQ-5bo"/>
+                                    <segue destination="V9I-dt-BbG" kind="presentation" identifier="configureTimer" id="wPK-1L-sfA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.40000000600000002" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="wNd-Hu-Mgz" firstAttribute="leading" secondItem="TKY-Dt-sQt" secondAttribute="trailing" id="1v3-ha-etN"/>
+                            <constraint firstItem="TKY-Dt-sQt" firstAttribute="baseline" secondItem="wNd-Hu-Mgz" secondAttribute="baseline" id="6Oe-mq-TJa"/>
+                            <constraint firstItem="LIG-83-mTQ" firstAttribute="top" secondItem="nVs-5c-Lb7" secondAttribute="bottom" constant="70" id="Gdl-rR-XD4"/>
+                            <constraint firstItem="LIG-83-mTQ" firstAttribute="leading" secondItem="nVs-5c-Lb7" secondAttribute="leading" id="IFZ-7h-fsy"/>
+                            <constraint firstItem="nVs-5c-Lb7" firstAttribute="trailing" secondItem="gKU-4G-CfI" secondAttribute="trailing" id="It1-4x-00H"/>
+                            <constraint firstItem="gKU-4G-CfI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="K24-yL-nH0"/>
+                            <constraint firstItem="nVs-5c-Lb7" firstAttribute="top" secondItem="gKU-4G-CfI" secondAttribute="bottom" id="MCo-K5-Ss9"/>
+                            <constraint firstItem="TKY-Dt-sQt" firstAttribute="leading" secondItem="LIG-83-mTQ" secondAttribute="trailing" id="Nei-XV-wvI"/>
+                            <constraint firstItem="l6R-e1-C5F" firstAttribute="baseline" secondItem="wNd-Hu-Mgz" secondAttribute="baseline" id="Orn-Dp-x5G"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="l6R-e1-C5F" secondAttribute="trailing" id="Wh8-3F-e5e"/>
+                            <constraint firstItem="gKU-4G-CfI" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="WpM-Oj-MVO"/>
+                            <constraint firstItem="nVs-5c-Lb7" firstAttribute="leading" secondItem="gKU-4G-CfI" secondAttribute="leading" id="Y8u-QV-7NZ"/>
+                            <constraint firstItem="gKU-4G-CfI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZYW-hN-lbx"/>
+                            <constraint firstItem="l6R-e1-C5F" firstAttribute="width" secondItem="LIG-83-mTQ" secondAttribute="width" id="bjY-BM-qgt"/>
+                            <constraint firstItem="TKY-Dt-sQt" firstAttribute="baseline" secondItem="LIG-83-mTQ" secondAttribute="baseline" id="fEn-YE-xqB"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="LIG-83-mTQ" secondAttribute="leading" id="jWE-xn-aH5"/>
+                            <constraint firstItem="l6R-e1-C5F" firstAttribute="leading" secondItem="wNd-Hu-Mgz" secondAttribute="trailing" id="luH-NI-oSM"/>
+                            <constraint firstItem="wNd-Hu-Mgz" firstAttribute="width" secondItem="LIG-83-mTQ" secondAttribute="width" id="oyY-v6-7qC"/>
+                            <constraint firstItem="gKU-4G-CfI" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="267" id="pQF-cN-Vgp"/>
+                            <constraint firstItem="gKU-4G-CfI" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="rC1-3g-Jgm"/>
+                            <constraint firstItem="TKY-Dt-sQt" firstAttribute="width" secondItem="LIG-83-mTQ" secondAttribute="width" id="zza-j1-kL9"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="ZYW-hN-lbx"/>
+                                <exclude reference="pQF-cN-Vgp"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="editButton" destination="l6R-e1-C5F" id="frG-Od-1qS"/>
+                        <outlet property="restartButton" destination="LIG-83-mTQ" id="q3i-j4-XaB"/>
+                        <outlet property="startButton" destination="TKY-Dt-sQt" id="l3M-tF-17q"/>
+                        <outlet property="stopButton" destination="wNd-Hu-Mgz" id="GYs-05-YqN"/>
+                        <outlet property="timerStatusLabel" destination="nVs-5c-Lb7" id="nEr-Gt-x6l"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="389"/>
+        </scene>
+        <!--Configure Timer View Controller-->
+        <scene sceneID="fvn-rI-PR5">
+            <objects>
+                <viewController id="V9I-dt-BbG" customClass="ConfigureTimerViewController" customModule="NotifyTimely" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xOQ-z2-R23"/>
+                        <viewControllerLayoutGuide type="bottom" id="WHO-en-7J6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Byu-U4-an0">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Configure Timer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sb0-mr-FNa" customClass="PaddedLabel" customModule="NotifyTimely" customModuleProvider="target">
+                                <rect key="frame" x="20" y="28" width="560" height="79"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="50"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JOW-CK-zee">
+                                <rect key="frame" x="20" y="222" width="280" height="70"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="KUG-IF-zWP"/>
+                                </constraints>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="handleSaveButtonPressed:" destination="V9I-dt-BbG" eventType="touchUpInside" id="czV-np-1mL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bXO-fr-DtQ">
+                                <rect key="frame" x="300" y="222" width="280" height="70"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="Ygp-nB-nWx"/>
+                                </constraints>
+                                <state key="normal" title="Cancel"/>
+                                <connections>
+                                    <action selector="handleCancelButtonPressed:" destination="V9I-dt-BbG" eventType="touchUpInside" id="EVh-Z0-RsY"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Timer Duration (s)" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mh7-3z-8y7">
+                                <rect key="frame" x="20" y="139" width="560" height="45"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="ucz-0l-o8M"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="30"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="1" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="bXO-fr-DtQ" secondAttribute="trailing" id="45K-QR-BtM"/>
+                            <constraint firstItem="JOW-CK-zee" firstAttribute="top" secondItem="mh7-3z-8y7" secondAttribute="bottom" constant="38" id="5V4-MH-eqC"/>
+                            <constraint firstItem="mh7-3z-8y7" firstAttribute="trailing" secondItem="sb0-mr-FNa" secondAttribute="trailing" id="Is4-os-yPu"/>
+                            <constraint firstItem="bXO-fr-DtQ" firstAttribute="leading" secondItem="JOW-CK-zee" secondAttribute="trailing" id="Jei-tA-1WB"/>
+                            <constraint firstItem="sb0-mr-FNa" firstAttribute="trailing" secondItem="Byu-U4-an0" secondAttribute="trailingMargin" id="PCY-Le-jOu"/>
+                            <constraint firstItem="sb0-mr-FNa" firstAttribute="top" secondItem="xOQ-z2-R23" secondAttribute="bottom" constant="8" symbolic="YES" id="SKz-h1-MuE"/>
+                            <constraint firstItem="JOW-CK-zee" firstAttribute="width" secondItem="bXO-fr-DtQ" secondAttribute="width" id="STz-I1-u2g"/>
+                            <constraint firstItem="mh7-3z-8y7" firstAttribute="top" secondItem="sb0-mr-FNa" secondAttribute="bottom" constant="32" id="Zfj-AH-RIL"/>
+                            <constraint firstItem="bXO-fr-DtQ" firstAttribute="leading" secondItem="JOW-CK-zee" secondAttribute="trailing" constant="8" id="ZqJ-uy-bH8"/>
+                            <constraint firstItem="bXO-fr-DtQ" firstAttribute="leading" secondItem="JOW-CK-zee" secondAttribute="trailing" constant="8" id="sRG-xQ-xXe"/>
+                            <constraint firstItem="JOW-CK-zee" firstAttribute="centerY" secondItem="bXO-fr-DtQ" secondAttribute="centerY" id="uli-hd-kim"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="JOW-CK-zee" secondAttribute="leading" id="w5C-rF-dTL"/>
+                            <constraint firstItem="sb0-mr-FNa" firstAttribute="leading" secondItem="Byu-U4-an0" secondAttribute="leadingMargin" id="xCE-Qn-rMq"/>
+                            <constraint firstItem="mh7-3z-8y7" firstAttribute="leading" secondItem="sb0-mr-FNa" secondAttribute="leading" id="xTu-H1-2Uu"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="ZqJ-uy-bH8"/>
+                                <exclude reference="sRG-xQ-xXe"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="durationTextField" destination="mh7-3z-8y7" id="5Dg-W7-V7D"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fzy-Kk-Fej" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="968" y="382"/>
+        </scene>
+    </scenes>
+</document>
