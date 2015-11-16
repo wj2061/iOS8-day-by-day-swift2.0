@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="GUy-C2-aWz">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="KlZ-nS-n94">
+            <objects>
+                <viewController id="GUy-C2-aWz" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zm9-xb-5Tr"/>
+                        <viewControllerLayoutGuide type="bottom" id="ksX-6M-HCQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CHT-V7-rlf">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.60000002384185791" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Launch" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uwp-Td-GUr">
+                                <rect key="frame" x="0.0" y="276" width="600" height="48"/>
+                                <color key="backgroundColor" red="0.90196084980000002" green="0.95294123890000004" blue="0.97254908080000002" alpha="1" colorSpace="deviceRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="40"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rocket" translatesAutoresizingMaskIntoConstraints="NO" id="uo0-6L-kD7">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Uwp-Td-GUr" firstAttribute="trailing" secondItem="uo0-6L-kD7" secondAttribute="trailing" id="0S7-Lb-aLa"/>
+                            <constraint firstItem="uo0-6L-kD7" firstAttribute="top" secondItem="CHT-V7-rlf" secondAttribute="top" id="9tr-Ie-DYY"/>
+                            <constraint firstItem="uo0-6L-kD7" firstAttribute="bottom" secondItem="ksX-6M-HCQ" secondAttribute="top" id="IJe-3t-7tS"/>
+                            <constraint firstAttribute="trailing" secondItem="uo0-6L-kD7" secondAttribute="trailing" id="MgW-kj-VHV"/>
+                            <constraint firstItem="Uwp-Td-GUr" firstAttribute="leading" secondItem="uo0-6L-kD7" secondAttribute="leading" id="aHY-t8-7Cs"/>
+                            <constraint firstItem="Uwp-Td-GUr" firstAttribute="centerY" secondItem="CHT-V7-rlf" secondAttribute="centerY" id="fXv-Sh-sfZ"/>
+                            <constraint firstItem="uo0-6L-kD7" firstAttribute="leading" secondItem="CHT-V7-rlf" secondAttribute="leading" id="qB5-4T-qTy"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NMa-eF-O6q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="10" y="260"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="rocket" width="1969" height="2106"/>
+    </resources>
+</document>
