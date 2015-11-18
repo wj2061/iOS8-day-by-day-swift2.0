@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="R9N-Rl-Cuy">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Wra-g0-KNh">
+            <objects>
+                <viewController id="R9N-Rl-Cuy" customClass="ViewController" customModule="MarqueeMaker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4nW-Hc-PEk"/>
+                        <viewControllerLayoutGuide type="bottom" id="AFL-KE-U2M"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Xb7-zM-6Fo">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="marquee" translatesAutoresizingMaskIntoConstraints="NO" id="82u-nn-z7P">
+                                <rect key="frame" x="150" y="150" width="300" height="300"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MarqueeMaker" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2rm-64-riu">
+                                <rect key="frame" x="175" y="442" width="250" height="48"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="40"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2rm-64-riu" firstAttribute="centerX" secondItem="82u-nn-z7P" secondAttribute="centerX" id="Myz-44-79b"/>
+                            <constraint firstAttribute="centerY" secondItem="82u-nn-z7P" secondAttribute="centerY" id="SRV-hO-VgB"/>
+                            <constraint firstItem="2rm-64-riu" firstAttribute="top" secondItem="82u-nn-z7P" secondAttribute="bottom" constant="-8" id="h3h-iu-LNH"/>
+                            <constraint firstAttribute="centerX" secondItem="82u-nn-z7P" secondAttribute="centerX" id="qde-06-Uyt"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vWZ-cA-U4F" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="marquee" width="300" height="300"/>
+    </resources>
+</document>
