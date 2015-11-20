@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TouchyFeely" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="UQg-EI-VyI">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hme-QA-vz2">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TouchyFeely" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RJW-3R-B0o">
+                                                <rect key="frame" x="189" y="28" width="223" height="47"/>
+                                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="40"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="tell me a secret..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jty-7e-jrS">
+                                                <rect key="frame" x="8" y="83" width="584" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="emw-dl-k3E">
+                                                <rect key="frame" x="283" y="151" width="34" height="30"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <state key="normal" title="Save"/>
+                                                <connections>
+                                                    <action selector="commitSecret:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4IX-FI-6is"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.68266547040000003" green="1" blue="0.33834254749999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="jty-7e-jrS" firstAttribute="leading" secondItem="Hme-QA-vz2" secondAttribute="leadingMargin" id="8QK-LL-tyd"/>
+                                            <constraint firstItem="emw-dl-k3E" firstAttribute="centerX" secondItem="jty-7e-jrS" secondAttribute="centerX" id="FDQ-fb-DyI"/>
+                                            <constraint firstItem="RJW-3R-B0o" firstAttribute="centerX" secondItem="Hme-QA-vz2" secondAttribute="centerX" id="OfF-rB-mKg"/>
+                                            <constraint firstItem="jty-7e-jrS" firstAttribute="centerX" secondItem="RJW-3R-B0o" secondAttribute="centerX" id="fwi-h7-00e"/>
+                                            <constraint firstItem="RJW-3R-B0o" firstAttribute="top" secondItem="Hme-QA-vz2" secondAttribute="top" constant="28" id="wbR-Gg-d7o"/>
+                                            <constraint firstItem="jty-7e-jrS" firstAttribute="top" secondItem="RJW-3R-B0o" secondAttribute="bottom" constant="8" symbolic="YES" id="wjw-WQ-ssi"/>
+                                            <constraint firstItem="emw-dl-k3E" firstAttribute="top" secondItem="jty-7e-jrS" secondAttribute="bottom" constant="38" id="yGT-tN-yBY"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dN5-7b-wic">
+                                        <rect key="frame" x="0.0" y="300" width="600" height="300"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="your secret was..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h4j-v7-Bmt">
+                                                <rect key="frame" x="222" y="123" width="157" height="24"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="22" id="0mC-Uk-Piv"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <color key="textColor" red="0.42352941179999998" green="0.69803921570000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="0mC-Uk-Piv"/>
+                                                    </mask>
+                                                </variation>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tti-aK-QRz">
+                                                <rect key="frame" x="274" y="68" width="53" height="30"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <state key="normal" title="retrieve"/>
+                                                <connections>
+                                                    <action selector="retrieveSecret:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WsJ-Zb-ZZW"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="0.97872049829999996" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="tti-aK-QRz" firstAttribute="top" secondItem="dN5-7b-wic" secondAttribute="top" constant="68" id="PiC-t2-0b8"/>
+                                            <constraint firstItem="h4j-v7-Bmt" firstAttribute="centerX" secondItem="tti-aK-QRz" secondAttribute="centerX" id="Q06-df-pNa"/>
+                                            <constraint firstItem="tti-aK-QRz" firstAttribute="centerX" secondItem="dN5-7b-wic" secondAttribute="centerX" id="mKu-Eh-qq6"/>
+                                            <constraint firstItem="h4j-v7-Bmt" firstAttribute="top" secondItem="tti-aK-QRz" secondAttribute="bottom" constant="25" id="zrI-sh-bPX"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="UQg-EI-VyI" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="dhW-8Q-6W3"/>
+                            <constraint firstItem="UQg-EI-VyI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="mC6-t6-U2g"/>
+                            <constraint firstAttribute="trailing" secondItem="UQg-EI-VyI" secondAttribute="trailing" id="uLX-qN-FZ5"/>
+                            <constraint firstItem="UQg-EI-VyI" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="zcX-TX-eqm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="commitButton" destination="emw-dl-k3E" id="Sdd-7a-psv"/>
+                        <outlet property="retrieveButton" destination="tti-aK-QRz" id="sIc-mB-Uu1"/>
+                        <outlet property="secretInputTextField" destination="jty-7e-jrS" id="dgs-oe-1uG"/>
+                        <outlet property="secretRetrievalLabel" destination="h4j-v7-Bmt" id="J3h-Pi-Snk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="340" y="389"/>
+        </scene>
+    </scenes>
+</document>
