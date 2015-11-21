@@ -1,0 +1,405 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0795637F1C0005EC0097549D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0795637E1C0005EC0097549D /* AppDelegate.swift */; };
+		079563811C0005EC0097549D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079563801C0005EC0097549D /* ViewController.swift */; };
+		079563841C0005EC0097549D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 079563821C0005EC0097549D /* Main.storyboard */; };
+		079563861C0005EC0097549D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 079563851C0005EC0097549D /* Assets.xcassets */; };
+		079563891C0005EC0097549D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 079563871C0005EC0097549D /* LaunchScreen.storyboard */; };
+		079563941C0005EC0097549D /* MarginaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079563931C0005EC0097549D /* MarginaTests.swift */; };
+		0795639F1C0006370097549D /* MarginConfigView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0795639E1C0006370097549D /* MarginConfigView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		079563901C0005EC0097549D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 079563731C0005EC0097549D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0795637A1C0005EC0097549D;
+			remoteInfo = Margina;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0795637B1C0005EC0097549D /* Margina.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Margina.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0795637E1C0005EC0097549D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		079563801C0005EC0097549D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		079563831C0005EC0097549D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		079563851C0005EC0097549D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		079563881C0005EC0097549D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0795638A1C0005EC0097549D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0795638F1C0005EC0097549D /* MarginaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarginaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		079563931C0005EC0097549D /* MarginaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarginaTests.swift; sourceTree = "<group>"; };
+		079563951C0005EC0097549D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0795639E1C0006370097549D /* MarginConfigView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarginConfigView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		079563781C0005EC0097549D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0795638C1C0005EC0097549D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		079563721C0005EC0097549D = {
+			isa = PBXGroup;
+			children = (
+				0795637D1C0005EC0097549D /* Margina */,
+				079563921C0005EC0097549D /* MarginaTests */,
+				0795637C1C0005EC0097549D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0795637C1C0005EC0097549D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0795637B1C0005EC0097549D /* Margina.app */,
+				0795638F1C0005EC0097549D /* MarginaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0795637D1C0005EC0097549D /* Margina */ = {
+			isa = PBXGroup;
+			children = (
+				0795637E1C0005EC0097549D /* AppDelegate.swift */,
+				079563801C0005EC0097549D /* ViewController.swift */,
+				079563821C0005EC0097549D /* Main.storyboard */,
+				0795639E1C0006370097549D /* MarginConfigView.swift */,
+				079563851C0005EC0097549D /* Assets.xcassets */,
+				079563871C0005EC0097549D /* LaunchScreen.storyboard */,
+				0795638A1C0005EC0097549D /* Info.plist */,
+			);
+			path = Margina;
+			sourceTree = "<group>";
+		};
+		079563921C0005EC0097549D /* MarginaTests */ = {
+			isa = PBXGroup;
+			children = (
+				079563931C0005EC0097549D /* MarginaTests.swift */,
+				079563951C0005EC0097549D /* Info.plist */,
+			);
+			path = MarginaTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0795637A1C0005EC0097549D /* Margina */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 079563981C0005EC0097549D /* Build configuration list for PBXNativeTarget "Margina" */;
+			buildPhases = (
+				079563771C0005EC0097549D /* Sources */,
+				079563781C0005EC0097549D /* Frameworks */,
+				079563791C0005EC0097549D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Margina;
+			productName = Margina;
+			productReference = 0795637B1C0005EC0097549D /* Margina.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0795638E1C0005EC0097549D /* MarginaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0795639B1C0005EC0097549D /* Build configuration list for PBXNativeTarget "MarginaTests" */;
+			buildPhases = (
+				0795638B1C0005EC0097549D /* Sources */,
+				0795638C1C0005EC0097549D /* Frameworks */,
+				0795638D1C0005EC0097549D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				079563911C0005EC0097549D /* PBXTargetDependency */,
+			);
+			name = MarginaTests;
+			productName = MarginaTests;
+			productReference = 0795638F1C0005EC0097549D /* MarginaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		079563731C0005EC0097549D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = wj;
+				TargetAttributes = {
+					0795637A1C0005EC0097549D = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					0795638E1C0005EC0097549D = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 0795637A1C0005EC0097549D;
+					};
+				};
+			};
+			buildConfigurationList = 079563761C0005EC0097549D /* Build configuration list for PBXProject "Margina" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 079563721C0005EC0097549D;
+			productRefGroup = 0795637C1C0005EC0097549D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0795637A1C0005EC0097549D /* Margina */,
+				0795638E1C0005EC0097549D /* MarginaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		079563791C0005EC0097549D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				079563891C0005EC0097549D /* LaunchScreen.storyboard in Resources */,
+				079563861C0005EC0097549D /* Assets.xcassets in Resources */,
+				079563841C0005EC0097549D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0795638D1C0005EC0097549D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		079563771C0005EC0097549D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				079563811C0005EC0097549D /* ViewController.swift in Sources */,
+				0795637F1C0005EC0097549D /* AppDelegate.swift in Sources */,
+				0795639F1C0006370097549D /* MarginConfigView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0795638B1C0005EC0097549D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				079563941C0005EC0097549D /* MarginaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		079563911C0005EC0097549D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0795637A1C0005EC0097549D /* Margina */;
+			targetProxy = 079563901C0005EC0097549D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		079563821C0005EC0097549D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				079563831C0005EC0097549D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		079563871C0005EC0097549D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				079563881C0005EC0097549D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		079563961C0005EC0097549D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		079563971C0005EC0097549D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		079563991C0005EC0097549D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Margina/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wj.Margina;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0795639A1C0005EC0097549D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Margina/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wj.Margina;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		0795639C1C0005EC0097549D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MarginaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wj.MarginaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Margina.app/Margina";
+			};
+			name = Debug;
+		};
+		0795639D1C0005EC0097549D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MarginaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wj.MarginaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Margina.app/Margina";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		079563761C0005EC0097549D /* Build configuration list for PBXProject "Margina" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				079563961C0005EC0097549D /* Debug */,
+				079563971C0005EC0097549D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		079563981C0005EC0097549D /* Build configuration list for PBXNativeTarget "Margina" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				079563991C0005EC0097549D /* Debug */,
+				0795639A1C0005EC0097549D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0795639B1C0005EC0097549D /* Build configuration list for PBXNativeTarget "MarginaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0795639C1C0005EC0097549D /* Debug */,
+				0795639D1C0005EC0097549D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 079563731C0005EC0097549D /* Project object */;
+}
