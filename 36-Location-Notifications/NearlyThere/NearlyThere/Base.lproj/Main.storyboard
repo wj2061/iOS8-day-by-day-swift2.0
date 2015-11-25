@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NearlyThere" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ckt-bg-N18">
+                                <rect key="frame" x="271" y="28" width="59" height="30"/>
+                                <state key="normal" title="Drop Pin"/>
+                                <connections>
+                                    <action selector="handleButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aaa-iI-elp"/>
+                                </connections>
+                            </button>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="fGf-wg-0dW">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ckt-bg-N18" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="EN8-nn-efR"/>
+                            <constraint firstAttribute="trailing" secondItem="fGf-wg-0dW" secondAttribute="trailing" id="ImS-Z4-ly4"/>
+                            <constraint firstItem="fGf-wg-0dW" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="Q6z-Zd-XUM"/>
+                            <constraint firstItem="fGf-wg-0dW" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="aQb-sA-96x"/>
+                            <constraint firstItem="fGf-wg-0dW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="zCd-nT-QcE"/>
+                            <constraint firstItem="ckt-bg-N18" firstAttribute="centerX" secondItem="fGf-wg-0dW" secondAttribute="centerX" id="zz4-ga-75H"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="actionButton" destination="ckt-bg-N18" id="Fqg-en-dAS"/>
+                        <outlet property="mapView" destination="fGf-wg-0dW" id="IcU-pp-LNv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="340" y="389"/>
+        </scene>
+    </scenes>
+</document>
