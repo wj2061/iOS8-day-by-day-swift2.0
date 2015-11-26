@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="WWo-au-sg9">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Collection View Controller-->
+        <scene sceneID="Lrh-sM-hPe">
+            <objects>
+                <collectionViewController id="WWo-au-sg9" customClass="WTCollectionViewController" customModule="WordTiles" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="HWe-fw-Zgn">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="fpf-qT-dC0">
+                            <size key="itemSize" width="149" height="43"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="k7B-7g-r78" customClass="WordTileCollectionViewCell" customModule="WordTiles" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="149" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="149" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Word" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ohC-cl-lF0">
+                                            <rect key="frame" x="8" y="8" width="133" height="27"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="32"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <color key="backgroundColor" red="1" green="0.58664772730000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="ohC-cl-lF0" firstAttribute="leading" secondItem="k7B-7g-r78" secondAttribute="leadingMargin" id="5eg-py-OhV"/>
+                                    <constraint firstItem="ohC-cl-lF0" firstAttribute="top" secondItem="k7B-7g-r78" secondAttribute="topMargin" id="BO0-kO-fpj"/>
+                                    <constraint firstItem="ohC-cl-lF0" firstAttribute="bottom" secondItem="k7B-7g-r78" secondAttribute="bottomMargin" id="ZaD-UR-JPJ"/>
+                                    <constraint firstItem="ohC-cl-lF0" firstAttribute="trailing" secondItem="k7B-7g-r78" secondAttribute="trailingMargin" id="jMG-vU-nok"/>
+                                </constraints>
+                                <size key="customSize" width="149" height="43"/>
+                                <connections>
+                                    <outlet property="wordLabel" destination="ohC-cl-lF0" id="FNp-ft-E40"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="WWo-au-sg9" id="met-zO-aLg"/>
+                            <outlet property="delegate" destination="WWo-au-sg9" id="n9r-ka-Ssh"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nbF-ir-nRJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="356" y="429"/>
+        </scene>
+    </scenes>
+</document>

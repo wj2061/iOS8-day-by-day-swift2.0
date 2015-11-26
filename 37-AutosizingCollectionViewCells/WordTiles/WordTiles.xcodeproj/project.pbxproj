@@ -1,0 +1,413 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04FF8CE01C069D3C00A8C603 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FF8CDF1C069D3C00A8C603 /* AppDelegate.swift */; };
+		04FF8CE51C069D3C00A8C603 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04FF8CE31C069D3C00A8C603 /* Main.storyboard */; };
+		04FF8CE71C069D3C00A8C603 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04FF8CE61C069D3C00A8C603 /* Assets.xcassets */; };
+		04FF8CEA1C069D3C00A8C603 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04FF8CE81C069D3C00A8C603 /* LaunchScreen.storyboard */; };
+		04FF8CF51C069D3C00A8C603 /* WordTilesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FF8CF41C069D3C00A8C603 /* WordTilesTests.swift */; };
+		04FF8D001C069F6500A8C603 /* WTCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FF8CFF1C069F6500A8C603 /* WTCollectionViewController.swift */; };
+		04FF8D021C06A1DB00A8C603 /* words.txt in Resources */ = {isa = PBXBuildFile; fileRef = 04FF8D011C06A1DB00A8C603 /* words.txt */; };
+		04FF8D041C06A20400A8C603 /* WordList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FF8D031C06A20400A8C603 /* WordList.swift */; };
+		04FF8D061C06A3E000A8C603 /* WordTileCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FF8D051C06A3E000A8C603 /* WordTileCollectionViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04FF8CF11C069D3C00A8C603 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04FF8CD41C069D3C00A8C603 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04FF8CDB1C069D3C00A8C603;
+			remoteInfo = WordTiles;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04FF8CDC1C069D3C00A8C603 /* WordTiles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordTiles.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04FF8CDF1C069D3C00A8C603 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		04FF8CE41C069D3C00A8C603 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04FF8CE61C069D3C00A8C603 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04FF8CE91C069D3C00A8C603 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		04FF8CEB1C069D3C00A8C603 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04FF8CF01C069D3C00A8C603 /* WordTilesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WordTilesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04FF8CF41C069D3C00A8C603 /* WordTilesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordTilesTests.swift; sourceTree = "<group>"; };
+		04FF8CF61C069D3C00A8C603 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04FF8CFF1C069F6500A8C603 /* WTCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTCollectionViewController.swift; sourceTree = "<group>"; };
+		04FF8D011C06A1DB00A8C603 /* words.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = words.txt; sourceTree = "<group>"; };
+		04FF8D031C06A20400A8C603 /* WordList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordList.swift; sourceTree = "<group>"; };
+		04FF8D051C06A3E000A8C603 /* WordTileCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordTileCollectionViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04FF8CD91C069D3C00A8C603 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04FF8CED1C069D3C00A8C603 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04FF8CD31C069D3C00A8C603 = {
+			isa = PBXGroup;
+			children = (
+				04FF8CDE1C069D3C00A8C603 /* WordTiles */,
+				04FF8CF31C069D3C00A8C603 /* WordTilesTests */,
+				04FF8CDD1C069D3C00A8C603 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		04FF8CDD1C069D3C00A8C603 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04FF8CDC1C069D3C00A8C603 /* WordTiles.app */,
+				04FF8CF01C069D3C00A8C603 /* WordTilesTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04FF8CDE1C069D3C00A8C603 /* WordTiles */ = {
+			isa = PBXGroup;
+			children = (
+				04FF8CDF1C069D3C00A8C603 /* AppDelegate.swift */,
+				04FF8CE31C069D3C00A8C603 /* Main.storyboard */,
+				04FF8CFF1C069F6500A8C603 /* WTCollectionViewController.swift */,
+				04FF8D051C06A3E000A8C603 /* WordTileCollectionViewCell.swift */,
+				04FF8D031C06A20400A8C603 /* WordList.swift */,
+				04FF8CE61C069D3C00A8C603 /* Assets.xcassets */,
+				04FF8CE81C069D3C00A8C603 /* LaunchScreen.storyboard */,
+				04FF8D011C06A1DB00A8C603 /* words.txt */,
+				04FF8CEB1C069D3C00A8C603 /* Info.plist */,
+			);
+			path = WordTiles;
+			sourceTree = "<group>";
+		};
+		04FF8CF31C069D3C00A8C603 /* WordTilesTests */ = {
+			isa = PBXGroup;
+			children = (
+				04FF8CF41C069D3C00A8C603 /* WordTilesTests.swift */,
+				04FF8CF61C069D3C00A8C603 /* Info.plist */,
+			);
+			path = WordTilesTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04FF8CDB1C069D3C00A8C603 /* WordTiles */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04FF8CF91C069D3C00A8C603 /* Build configuration list for PBXNativeTarget "WordTiles" */;
+			buildPhases = (
+				04FF8CD81C069D3C00A8C603 /* Sources */,
+				04FF8CD91C069D3C00A8C603 /* Frameworks */,
+				04FF8CDA1C069D3C00A8C603 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WordTiles;
+			productName = WordTiles;
+			productReference = 04FF8CDC1C069D3C00A8C603 /* WordTiles.app */;
+			productType = "com.apple.product-type.application";
+		};
+		04FF8CEF1C069D3C00A8C603 /* WordTilesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04FF8CFC1C069D3C00A8C603 /* Build configuration list for PBXNativeTarget "WordTilesTests" */;
+			buildPhases = (
+				04FF8CEC1C069D3C00A8C603 /* Sources */,
+				04FF8CED1C069D3C00A8C603 /* Frameworks */,
+				04FF8CEE1C069D3C00A8C603 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04FF8CF21C069D3C00A8C603 /* PBXTargetDependency */,
+			);
+			name = WordTilesTests;
+			productName = WordTilesTests;
+			productReference = 04FF8CF01C069D3C00A8C603 /* WordTilesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04FF8CD41C069D3C00A8C603 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = wj;
+				TargetAttributes = {
+					04FF8CDB1C069D3C00A8C603 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					04FF8CEF1C069D3C00A8C603 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 04FF8CDB1C069D3C00A8C603;
+					};
+				};
+			};
+			buildConfigurationList = 04FF8CD71C069D3C00A8C603 /* Build configuration list for PBXProject "WordTiles" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04FF8CD31C069D3C00A8C603;
+			productRefGroup = 04FF8CDD1C069D3C00A8C603 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04FF8CDB1C069D3C00A8C603 /* WordTiles */,
+				04FF8CEF1C069D3C00A8C603 /* WordTilesTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04FF8CDA1C069D3C00A8C603 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04FF8CEA1C069D3C00A8C603 /* LaunchScreen.storyboard in Resources */,
+				04FF8CE71C069D3C00A8C603 /* Assets.xcassets in Resources */,
+				04FF8D021C06A1DB00A8C603 /* words.txt in Resources */,
+				04FF8CE51C069D3C00A8C603 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04FF8CEE1C069D3C00A8C603 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04FF8CD81C069D3C00A8C603 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04FF8D061C06A3E000A8C603 /* WordTileCollectionViewCell.swift in Sources */,
+				04FF8D041C06A20400A8C603 /* WordList.swift in Sources */,
+				04FF8D001C069F6500A8C603 /* WTCollectionViewController.swift in Sources */,
+				04FF8CE01C069D3C00A8C603 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04FF8CEC1C069D3C00A8C603 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04FF8CF51C069D3C00A8C603 /* WordTilesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04FF8CF21C069D3C00A8C603 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04FF8CDB1C069D3C00A8C603 /* WordTiles */;
+			targetProxy = 04FF8CF11C069D3C00A8C603 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		04FF8CE31C069D3C00A8C603 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04FF8CE41C069D3C00A8C603 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		04FF8CE81C069D3C00A8C603 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04FF8CE91C069D3C00A8C603 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04FF8CF71C069D3C00A8C603 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		04FF8CF81C069D3C00A8C603 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04FF8CFA1C069D3C00A8C603 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WordTiles/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wj.WordTiles;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		04FF8CFB1C069D3C00A8C603 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WordTiles/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wj.WordTiles;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		04FF8CFD1C069D3C00A8C603 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WordTilesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wj.WordTilesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WordTiles.app/WordTiles";
+			};
+			name = Debug;
+		};
+		04FF8CFE1C069D3C00A8C603 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WordTilesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wj.WordTilesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WordTiles.app/WordTiles";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04FF8CD71C069D3C00A8C603 /* Build configuration list for PBXProject "WordTiles" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04FF8CF71C069D3C00A8C603 /* Debug */,
+				04FF8CF81C069D3C00A8C603 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04FF8CF91C069D3C00A8C603 /* Build configuration list for PBXNativeTarget "WordTiles" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04FF8CFA1C069D3C00A8C603 /* Debug */,
+				04FF8CFB1C069D3C00A8C603 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		04FF8CFC1C069D3C00A8C603 /* Build configuration list for PBXNativeTarget "WordTilesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04FF8CFD1C069D3C00A8C603 /* Debug */,
+				04FF8CFE1C069D3C00A8C603 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04FF8CD41C069D3C00A8C603 /* Project object */;
+}
