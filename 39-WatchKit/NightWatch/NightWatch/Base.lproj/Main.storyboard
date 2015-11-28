@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="shR-ri-Tk4">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="4Sr-79-dVI">
+            <objects>
+                <viewController id="shR-ri-Tk4" customClass="ViewController" customModule="NightWatch" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HXf-Yb-N8h"/>
+                        <viewControllerLayoutGuide type="bottom" id="QvK-X2-sga"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bf6-mD-ro1">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KBd-Nd-xve">
+                                <rect key="frame" x="0.0" y="300" width="600" height="300"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="watch" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="none" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eRL-JT-HZp">
+                                        <rect key="frame" x="8" y="8" width="584" height="142"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="120"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="eRL-JT-HZp" firstAttribute="leading" secondItem="KBd-Nd-xve" secondAttribute="leadingMargin" id="9o7-mE-mVh"/>
+                                    <constraint firstItem="eRL-JT-HZp" firstAttribute="top" secondItem="KBd-Nd-xve" secondAttribute="topMargin" id="D55-Cq-otI"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="eRL-JT-HZp" secondAttribute="trailing" id="Rk9-Mt-Sdn"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="night" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dTv-jn-6Ya">
+                                <rect key="frame" x="20" y="158" width="560" height="142"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="120"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KBd-Nd-xve" firstAttribute="top" secondItem="dTv-jn-6Ya" secondAttribute="bottom" id="HvU-hA-zHO"/>
+                            <constraint firstAttribute="trailing" secondItem="KBd-Nd-xve" secondAttribute="trailing" id="J1K-pW-wf9"/>
+                            <constraint firstAttribute="bottom" secondItem="KBd-Nd-xve" secondAttribute="bottom" id="J7L-v6-iVs"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dTv-jn-6Ya" secondAttribute="trailing" id="UWi-5a-gjW"/>
+                            <constraint firstItem="KBd-Nd-xve" firstAttribute="height" secondItem="bf6-mD-ro1" secondAttribute="height" multiplier="0.5" id="qTt-et-oPf"/>
+                            <constraint firstItem="dTv-jn-6Ya" firstAttribute="leading" secondItem="bf6-mD-ro1" secondAttribute="leadingMargin" id="rfK-Wu-tR1"/>
+                            <constraint firstItem="KBd-Nd-xve" firstAttribute="leading" secondItem="bf6-mD-ro1" secondAttribute="leading" id="ukN-fS-o4a"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y6L-yt-ndh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
